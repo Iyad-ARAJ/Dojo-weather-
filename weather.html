@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojo weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <nav id="navi">
+        <h1 id="dojo">Dojo Weather</h1>
+        <h3 class="city burbank">BURNANK</h3>
+        <h3 class="city chicago">CHICAGO</h3>
+        <h3 class="city dallas">DALLAS</h3>
+    </nav>
+    <div class="content">
+        <div class="head">
+            <h1>SAN JOSE</h1>
+            <p><select onchange="changeTemp(this)">
+                    <option value="C">Celsius </option>
+                    <option value="F">Fahrenheit</option>
+                </select>
+            </p>
+        </div>
+        <hr>
+        <div class="main">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="some_rain.png" alt="some_rain">
+                <p>some rain </p>
+                <div class="temp">
+                    <p3 class="hot">26</p3>
+                    <p3 class="cool">27</p3>
+                </div>
+
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="some_sun.png" alt="some_sun">
+                <p>some sun </p>
+                <div class="temp">
+                    <p3 class="hot">27</p3>
+                    <p3 class="cool">19</p3>
+                </div>
+
+
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="some_clouds.png" alt="some_clouds">
+                <p>some clouds</p>
+                <div class="temp">
+                    <p3 class="hot">21</p3>
+                    <p3 class="cool">16</p3>
+                </div>
+
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="temp">
+                    <p3 class="hot">26</p3>
+                    <p3 class="cool">21</p3>
+                </div>
+
+            </div>
+
+        </div>
+        <footer id="footer">
+            <img class="cookie" src="cookie.png" alt="cookie">
+            <div>
+                <h2>stop cookie time</h2>
+                <p>we use cookie(sadly not the edible ones) to personlize content and ads,to provide social media
+                    features and to<br>analyse our trafic <a href="#">Read More</a></p>
+            </div>
+            <div>
+                <button class="btn" onclick="removeFooter()"> I Accept</button>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
